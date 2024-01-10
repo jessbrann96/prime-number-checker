@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import {
-  isPrime
-} from './logic';
+import isPrime from './logic';
 
 
 export default function App() {
