@@ -15,6 +15,8 @@ export default function App() {
     // if value is not a number, return result as error
     if (isNaN(value)) {
       setResult("ERROR");
+    } else if (value === "") {
+      setResult("NOENTRY") //this will trigger the default case in the below switch statement, so will prompt for the user to input a value
     } else {
       const res = isPrime(parseInt(value, 10)) ? "YES": "NO";
       setResult(res);
