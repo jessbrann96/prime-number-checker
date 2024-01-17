@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import isPrime from './logic';
+import './App.css';
+
 
 
 export default function App() {
@@ -41,10 +43,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <div>
-        <p>Enter number to verify prime number</p>
+      <h1 className="title">Prime Number Checker </h1>
+        <div className="entryText">Enter a number to check if it is prime</div>
         <input type="text" className="input" value={value} onChange={handleChange}/>
-      </div>
       <div>
         <button className="button" onClick={handleClick}>Check</button>
       </div>
@@ -52,4 +53,5 @@ export default function App() {
     </div>
   );
 }
+
 
