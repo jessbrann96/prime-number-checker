@@ -19,5 +19,3 @@ it("tests that prime number checker works with non number", ()=> {
   const num = "n";
   expect(isPrime(num)).toBe(false)
 });
-// TODO - add in a check later on to make sure non-number entries show up as an error rather than just being false (for now, false is what we expect)
-// Same goes for the zero entry, for now we expect a false response but should really give an error when logic is developed further
