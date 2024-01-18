@@ -45,11 +45,11 @@ export default function App() {
     <div className="App">
       <h1 className="title">Prime Number Checker </h1>
         <div className="entryText">Enter a number to check if it is prime</div>
-        <input type="text" className="input" value={value} onChange={handleChange}/>
+        <input data-testid="prime-number-input" type="text" className="input" value={value} onChange={handleChange}/>
       <div>
-        <button className="button" onClick={handleClick}>Check</button>
+        <button data-testid="prime-number-button" className="button" onClick={handleClick}>Check</button>
       </div>
-      <div>{text}</div>
+      <div data-testid="prime-number-text"> {text} </div>
     </div>
   );
 }
